@@ -54,6 +54,10 @@ class HomeController extends Controller
     protected function getSurvey()
     {
         // cek tipe survey
-        return Survey::where('name', 'Form Survei Mitra Tridharma')->first();
+        return Survey::where('name', 'Form Survei Lulusan')->first();
     }
+
+    // protected function getUserType(){
+
+    // }
 }
