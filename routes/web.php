@@ -19,12 +19,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('import', [ImportController::class,'import'])->name('import');
+Route::get('import', [ImportController::class, 'import'])->name('import');
 
-Route::get('/login-dev', [CustomAuthController::class,'formLoginDev'])->name('login.dev');
-Route::get('/login', [CustomAuthController::class,'formLogin'])->name('login');
-Route::post('/login-dev', [CustomAuthController::class,'loginDev'])->name('login.dev.act');
+Route::get('/login-dev', [CustomAuthController::class, 'formLoginDev'])->name('login.dev');
+Route::get('/login', [CustomAuthController::class, 'formLogin'])->name('login');
+Route::post('/login-dev', [CustomAuthController::class, 'loginDev'])->name('login.dev.act');
 // Auth::routes();
-Route::post('logout', [CustomAuthController::class,'logout'])->name('logout');
+Route::post('logout', [CustomAuthController::class, 'logout'])->name('logout');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/submit-survey', [App\Http\Controllers\HomeController::class, 'store'])->name('submit');
+Route::view('/selesai', 'selesai')->name('selesai');

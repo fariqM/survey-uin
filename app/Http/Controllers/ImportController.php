@@ -101,13 +101,15 @@ class ImportController extends Controller
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             } else {
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             }
 
@@ -126,13 +128,15 @@ class ImportController extends Controller
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             } else {
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             }
 
@@ -151,13 +155,15 @@ class ImportController extends Controller
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             } else {
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             }
 
@@ -176,13 +182,15 @@ class ImportController extends Controller
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             } else {
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             }
 
@@ -201,13 +209,15 @@ class ImportController extends Controller
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             } else {
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             }
 
@@ -226,13 +236,15 @@ class ImportController extends Controller
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             } else {
                 $section->questions()->create([
                     'content' => $value['pernyataan'],
                     'type' => 'radio',
-                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas']
+                    'options' => ['Sangat Tidak Puas', 'Tidak Puas', 'Puas', 'Sangat Puas'],
+                    'rules' => ['required'],
                 ]);
             }
 
