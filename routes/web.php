@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\CustomAuthController;
+use App\Http\Controllers\ImportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('import', [ImportController::class,'import'])->name('import');
 
 Route::get('/login-dev', [CustomAuthController::class,'formLoginDev'])->name('login.dev');
 Route::get('/login', [CustomAuthController::class,'formLogin'])->name('login');

@@ -26,29 +26,26 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => Carbon::now(),
         ]);
 
-        $survey = Survey::create([
-            'name' => 'Cat Population Survey',
-            'settings' => [
-                'accept-guest-entries' => true,
-                'limit-per-participant' => 1
-            ]
-        ]);
+        // $survey = Survey::create(['name' => 'Cat Population Survey']);
 
-        $survey->questions()->create([
-            'content' => 'How many cats do you have?',
-            'type' => 'number',
-            'rules' => ['numeric', 'min:0']
-        ]);
-
-        $survey->questions()->create([
-            'content' => 'What\'s the name of your first cat',
-        ]);
-
-        $survey->questions()->create([
-            'content' => 'Would you want a new cat?',
-            'type' => 'radio',
-            'options' => ['Yes', 'Oui'],
-            'rules' => ['required']
-        ]);
+        // $one = $survey->sections()->create(['name' => 'Part One']);
+        
+        // $one->questions()->create([
+        //     'content' => 'How many cats do you have?',
+        //     'type' => 'number',
+        //     'rules' => ['numeric', 'min:0']
+        // ]);
+        
+        // $two = $survey->sections()->create(['name' => 'Part Two']);
+        
+        // $two->questions()->create([
+        //     'content' => 'What\'s the name of your first cat?',
+        // ]);
+        
+        // $two->questions()->create([
+        //     'content' => 'Would you want a new cat?',
+        //     'type' => 'radio',
+        //     'options' => ['Yes', 'Oui']
+        // ]);
     }
 }

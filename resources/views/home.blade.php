@@ -4,7 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            @include('survey::standard', ['survey' => $survey])
+
+            {{-- <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
@@ -13,11 +15,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
-                    {{-- @include('survey::standard', ['survey' => $survey]) --}}
+                    @include('survey::standard', ['survey' => $survey])
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
