@@ -85,7 +85,8 @@ class ImportController extends Controller
         $this->setSurveyLulusan($surveyLulusan);
         $this->setSurveyPenggunaLulusan($surveyPenggunaLulusan);
 
-        dd("ok");
+        return redirect()->route('home')->with('success', 'Data berhasil diimport');
+        // dd("ok");
         // dd($surveyDosen, $surveyTendik, $surveyMhs, $surveyMitra, $surveyLulusan, $surveyPenggunaLulusan);
     }
 

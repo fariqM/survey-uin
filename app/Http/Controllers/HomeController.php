@@ -54,7 +54,7 @@ class HomeController extends Controller
     protected function getSurvey()
     {
         // cek tipe survey
-        return Survey::where('name', 'Form Survei Lulusan')->first();
+        return Survey::where('name', 'Form Survei Tenaga Kependidik')->first();
     }
 
     // protected function getUserType(){

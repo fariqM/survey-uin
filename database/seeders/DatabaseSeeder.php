@@ -26,5 +26,16 @@ class DatabaseSeeder extends Seeder
             'password' => \Hash::make('rangga1822'),
             'email_verified_at' => Carbon::now(),
         ]);
+
+        \App\Models\User::factory()->create([
+            'name' => 'Jeffri Dian Asmoro, S.Kom',
+            'type' => 'Tenaga Kependidikan',
+            'email' => 'juki@gmail.com',
+            'nip' => '20220805',
+            'password' => \Hash::make('rangga1822'),
+            'email_verified_at' => Carbon::now(),
+        ]);
+
+        
     }
 }

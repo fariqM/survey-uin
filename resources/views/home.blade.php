@@ -7,11 +7,17 @@
                 <form action="{{ route('submit') }}" method="post">
                     @csrf
                     @if (session('success'))
-                        <div class="alert alert-primary" role="alert">
+                        <div class="alert alert-success" role="alert">
                             {{ session('success') }}
                         </div>
                     @endif
-                    @include('survey::standard', ['survey' => $survey])
+                    @if ($survey)
+                        @include('survey::standard', ['survey' => $survey])
+                    @else
+                        <div class="alert alert-warning text-center" role="alert">
+                            <b>NO SURVEY !</b>
+                        </div>
+                    @endif
                 </form>
             </div>
         </div>
