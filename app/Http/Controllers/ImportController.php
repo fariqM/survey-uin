@@ -92,7 +92,13 @@ class ImportController extends Controller
 
     public function setSurveyDosen($dataPernyataan)
     {
-        $survey = Survey::create(['name' => 'Form Survei Dosen', 'settings' => ['limit-per-participant' => 1]]);
+        $survey = Survey::create([
+            'name' => 'Form Survei Dosen',
+            'settings' => [
+                // 'limit-per-participant' => 1,
+                'accept-guest-entries' => true
+            ]
+        ]);
         $kriteria = '';
         $section = '';
         foreach ($dataPernyataan as $key => $value) {
@@ -119,7 +125,13 @@ class ImportController extends Controller
 
     public function setSurveyTendik($dataPernyataan)
     {
-        $survey = Survey::create(['name' => 'Form Survei Tenaga Kependidik', 'settings' => ['limit-per-participant' => 1]]);
+        $survey = Survey::create([
+            'name' => 'Form Survei Tenaga Kependidik',
+            'settings' => [
+                // 'limit-per-participant' => 1,
+                'accept-guest-entries' => true
+            ]
+        ]);
         $kriteria = '';
         $section = '';
         foreach ($dataPernyataan as $key => $value) {
@@ -146,7 +158,13 @@ class ImportController extends Controller
 
     public function setSurveyMhs($dataPernyataan)
     {
-        $survey = Survey::create(['name' => 'Form Survei Mahasiswa', 'settings' => ['limit-per-participant' => 1]]);
+        $survey = Survey::create([
+            'name' => 'Form Survei Mahasiswa',
+            'settings' => [
+                // 'limit-per-participant' => 1,
+                'accept-guest-entries' => true
+            ]
+        ]);
         $kriteria = '';
         $section = '';
         foreach ($dataPernyataan as $key => $value) {
@@ -173,7 +191,14 @@ class ImportController extends Controller
 
     public function setSurveyMitra($dataPernyataan)
     {
-        $survey = Survey::create(['name' => 'Form Survei Mitra Tridharma', 'settings' => ['limit-per-participant' => 1]]);
+        $survey = Survey::create([
+            'name' => 'Form Survei Mitra Tridharma',
+            'settings' => [
+                // 'limit-per-participant' => 1,
+                'accept-guest-entries' => true
+
+            ]
+        ]);
         $kriteria = '';
         $section = '';
         foreach ($dataPernyataan as $key => $value) {
@@ -200,7 +225,14 @@ class ImportController extends Controller
 
     public function setSurveyLulusan($dataPernyataan)
     {
-        $survey = Survey::create(['name' => 'Form Survei Lulusan', 'settings' => ['limit-per-participant' => 1]]);
+        $survey = Survey::create([
+            'name' => 'Form Survei Lulusan',
+            'settings' => [
+                // 'limit-per-participant' => 1,
+                'accept-guest-entries' => true
+
+            ]
+        ]);
         $kriteria = '';
         $section = '';
         foreach ($dataPernyataan as $key => $value) {
@@ -227,7 +259,13 @@ class ImportController extends Controller
 
     public function setSurveyPenggunaLulusan($dataPernyataan)
     {
-        $survey = Survey::create(['name' => 'Form Survei Pengguna Lulusan', 'settings' => ['limit-per-participant' => 1]]);
+        $survey = Survey::create([
+            'name' => 'Form Survei Pengguna Lulusan',
+            'settings' => [
+                // 'limit-per-participant' => 1,
+                'accept-guest-entries' => true
+            ]
+        ]);
         $kriteria = '';
         $section = '';
         foreach ($dataPernyataan as $key => $value) {

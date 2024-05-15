@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEntriesTable extends Migration
+class CreateAnswersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class CreateEntriesTable extends Migration
      */
     public function up()
     {
-        Schema::create(config('survey.database.tables.entries'), function (Blueprint $table) {
+        Schema::create(config('survey.database.tables.answers'), function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('survey_id');
-            $table->unsignedInteger('participant_id')->nullable();
+            $table->unsignedInteger('question_id');
+            $table->foreign('question_id')->references('id')->on('questions');
+
+            $table->unsignedInteger('entry_id')->nullable();
+            $table->string('value');
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ class CreateEntriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('survey.database.tables.entries'));
+        Schema::dropIfExists(config('survey.database.tables.answers'));
     }
 }
